@@ -112,7 +112,7 @@ before_script:
 
 script:
   - mkdir -p $(pwd)/vendor/bin
-  - ln -s $(pwd)/vendor/bin/behat $(pwd)/bin/behat
+  - ln -s $(pwd)/bin/behat $(pwd)/vendor/bin/behat
   - drupal-ti script
 
 after_script:
