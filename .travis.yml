@@ -111,7 +111,8 @@ before_script:
   - drupal-ti before_script
 
 script:
-  - ln -s ./vendor/bin/behat $DRUPAL_TI_MODULES_PATH/tests/bin/behat
+  - mkdir -p $(pwd)/vendor/bin
+  - ln -s $(pwd)/vendor/bin/behat $(pwd)/bin/behat
   - drupal-ti script
 
 after_script:
