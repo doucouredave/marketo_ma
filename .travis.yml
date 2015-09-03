@@ -111,8 +111,6 @@ before_script:
   - drupal-ti before_script
 
 script:
-  - bin/behat --version
-  - behat --version
   - drupal-ti script
 
 after_script:
