@@ -202,7 +202,8 @@ function _marketo_ma_get_munchkin_init_params() {
     $initParams['wsInfo'] = $marketo_ma_munchkin_partition;
   }
   if ($marketo_ma_munchkin_altIds != '') {
-    $initParams['altIds'] = $marketo_ma_munchkin_altIds;
+    $altIds = preg_split("/,\s*/", $marketo_ma_munchkin_altIds);
+    $initParams['altIds'] = $altIds;
   }
   if ($marketo_ma_munchkin_cookieLifeDays != '') {
     $initParams['cookieLifeDays'] = $marketo_ma_munchkin_cookieLifeDays;

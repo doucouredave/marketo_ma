@@ -81,7 +81,7 @@ function marketo_ma_admin_settings_form($form, &$form_state) {
   $form['marketo_ma_tabs']['marketo_ma_api']['marketo_ma_munchkin']['marketo_ma_munchkin_advanced'] = array(
     '#title' => t('Advanced Initialization Parameters'),
     '#type' => 'fieldset',
-    '#description' => t("Munchkin can accept a variety of additional configuration parameters to customize its behavior.<br />NOTE: Leave the field blank to accept it's default value"),
+    '#description' => t("Munchkin can accept a variety of additional configuration parameters to customize its behavior.<br />NOTE: Leave the field blank to accept it's default value as defined in munchkin.js"),
     '#collapsible' => TRUE,
     '#collapsed' => TRUE,
   );
